@@ -1,0 +1,12 @@
+* {
+  scrollbar-width: 2px;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0b1627;
+  border-radius: 0;
+}

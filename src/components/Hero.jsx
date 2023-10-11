@@ -3,32 +3,32 @@ import mainImg from "../assets/main-img.jpg";
 
 function Hero() {
   return (
-    <section>
-      <div className="relative items-center w-full px-5 py-24 mx-auto overflow-hidden md:px-12 lg:px-16 max-w-7xl">
+    <section className="dark:bg-gray-950 mt-16">
+      <div className="relative items-center w-full px-5 h-[90vh] py-24 mx-auto overflow-hidden md:px-12 lg:px-16 max-w-7xl">
         {/* <div className="grid items-start grid-cols-1 gap-12 md:grid-cols-2"> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           <div>
             <div className="max-w-xl lg:p-10">
               <div>
-                <p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+                <p className="text-2xl font-medium tracking-tight text-black dark:text-white sm:text-4xl">
                   I am a Software Engineer
                 </p>
-                <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
+                <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600 dark:text-slate-300">
                   Use this paragraph to share information about your company or
                   products. Make it engaging and interesting, and showcase your
-                  brand's personality. Thanks for visiting our website!
+                  brand personality. Thanks for visiting our website!
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
                 <a
                   href="#"
-                  className="items-center justify-center w-full px-6 py-2.5  text-center text-white duration-200 bg-black border-2 border-black rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black"
+                  className="items-center justify-center w-full px-6 py-2.5  text-center text-white dark:text-black duration-200 bg-black border-2 border-black dark:bg-white rounded-full inline-flex hover:bg-transparent hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white focus:outline-none lg:w-auto focus-visible:outline-black dark:focus-visible:outline-white text-sm focus-visible:ring-black dark:focus-visible:ring-white"
                 >
                   Download CV
                 </a>
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600"
+                  className="inline-flex items-center justify-center text-sm font-semibold text-black dark:text-white duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600 dark:focus-visible:outline-white"
                 >
                   LinkedIn &nbsp; →
                 </a>
