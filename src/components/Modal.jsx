@@ -30,9 +30,9 @@ const Modal = () => {
 
                   <p className="mt-2 text-[.9rem] text-gray-700 dark:text-gray-400">
                     Due to non-disclosure agreements, I&apos;m unable to share
-                    specific project details. If you have questions or would
-                    like to learn more, please feel free to schedule a meeting
-                    with me to discuss my skills and expertise.
+                    specific project details. If you have questions, please feel
+                    free to schedule a meeting with me to discuss my skills and
+                    expertise.
                   </p>
                 </div>
               </div>
