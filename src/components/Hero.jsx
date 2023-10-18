@@ -11,7 +11,7 @@ import mainImg from "../assets/profileIcon.png";
 function Hero() {
   return (
     <section className="dark:bg-gray-950 mt-16">
-      <div className="relative items-center w-full px-5 h-[110vh] md:h-[90vh] py-12 md:py-24 mx-auto overflow-hidden md:px-12 lg:px-16 max-w-7xl">
+      <div className="relative items-center w-full px-5 h-[90vh] md:h-[90vh] py-12 md:py-24 mx-auto overflow-hidden md:px-12 lg:px-16 max-w-7xl">
         {/* <div className="grid items-start grid-cols-1 gap-12 md:grid-cols-2"> */}
         <div className="overflow-hidden mx-auto w-64 md:hidden">
           <img
