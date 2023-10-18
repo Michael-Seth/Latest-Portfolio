@@ -1,4 +1,6 @@
-function CTA() {
+
+function CallToAction() {
+
   return (
     <section className="bg-gray-100">
       <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl">
@@ -13,7 +15,7 @@ function CTA() {
                   <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
                     Use this paragraph to share information about your company
                     or products. Make it engaging and interesting, and showcase
-                    your brand's personality. Thanks for visiting our website!
+                    your personality. Thanks for visiting our website!
                   </p>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
@@ -39,4 +41,4 @@ function CTA() {
   );
 }
 
-export default CTA;
+export default CallToAction;

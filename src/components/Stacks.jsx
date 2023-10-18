@@ -3,47 +3,54 @@ function Stacks() {
     <section className="dark:bg-gray-950 border-t border-gray-900">
       <div className="relative items-center w-full px-5 pt-24 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
         <div className="gap-12 lg:grid-cols-2 lg:grid">
-          <div>
+          <div className="mb-16 sm:mb-0">
             <div className="max-w-xl">
               <div>
-                <p className="text-2xl font-medium tracking-tight text-black dark:text-white sm:text-4xl">
-                  I am a slightly longer heading than the others, to explain
-                  your projects benefits and make conversions
+                <p className="text-2xl font-medium tracking-tight pb-3 text-black dark:text-white sm:text-4xl">
+                  Technology Stack & Expertise
+                  <br />
                 </p>
+                <span className=" md:text-xl text-lg font-normal dark:text-slate-400 tracking-normal">
+                  An in-depth exploration of the technologies, frameworks, and
+                  libraries I am proficient in.
+                </span>
               </div>
             </div>
-            <div className="mx-auto mt-12 lg:max-w-7xl">
+            <div className="mx-auto mt-4 sm:mt-12 lg:max-w-7xl">
               <ul
                 role="list"
-                className="grid grid-cols-2 gap-4 list-none lg:gap-6"
+                className="grid sm:grid-cols-2 grid-rows-2 gap-4 list-none lg:gap-6"
               >
                 <li>
                   <div>
                     <p className="mt-5 text-lg font-medium leading-6 text-black dark:text-white">
-                      Easy onboarding
+                      Backend Technologies
                     </p>
                   </div>
                   <div className="mt-2 text-base text-gray-500">
-                    Plus, our platform is constantly evolving to meet the
-                    changing needs.
+                    I specialize in Node.js (Express.js and Nest.js) to create
+                    secure and efficient backend solutions. Proficient in
+                    MongoDB, PostgreSQL, MySQL, Sequelize, and TypeORM.
                   </div>
                 </li>
                 <li>
                   <div>
                     <p className="mt-5 text-lg font-medium leading-6 text-black dark:text-white">
-                      Customer support
+                      Frontend Development
                     </p>
                   </div>
                   <div className="mt-2 text-base text-gray-500">
-                    Plus, our platform is constantly evolving to meet the
-                    changing needs.
+                    Skilled in React.js and related technologies, I craft
+                    seamless, user-friendly interfaces with my backend
+                    expertise, delivering a unified user experience in my
+                    applications.
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="">
-            <div className="max-w-xl py-12 mx-auto text-left lg:max-w-7xl">
+          <div className="pb-20 sm:pb-0">
+            <div className="max-w-xl mx-auto text-left lg:max-w-7xl">
               <h2 className="sr-only">Features.</h2>
               <div>
                 <div className="grid grid-cols-3 gap-12 text-center lg:grid-cols-3 lg:space-y-0">
@@ -53,7 +60,7 @@ function Stacks() {
                         ❖
                       </div>
                       <p className="mt-5 font-medium leading-6 text-black dark:text-white">
-                        Footers
+                        Node.js
                       </p>
                     </div>
                   </div>
@@ -63,7 +70,7 @@ function Stacks() {
                         ❖
                       </div>
                       <p className="mt-5 font-medium leading-6 text-black dark:text-white">
-                        CTA&apos;s
+                        Express.js
                       </p>
                     </div>
                   </div>
@@ -73,7 +80,18 @@ function Stacks() {
                         ❖
                       </div>
                       <p className="mt-5 font-medium leading-6 text-black dark:text-white">
-                        Forms
+                        Nest.js
+                      </p>
+                    </div>
+                  </div>
+                  {/*  */}
+                  <div>
+                    <div>
+                      <div className="flex items-center justify-center w-12 h-12 mx-auto text-black bg-gray-100 rounded-xl">
+                        ❖
+                      </div>
+                      <p className="mt-5 font-medium leading-6 text-black dark:text-white">
+                        React.js
                       </p>
                     </div>
                   </div>
@@ -83,7 +101,7 @@ function Stacks() {
                         ❖
                       </div>
                       <p className="mt-5 font-medium leading-6 text-black dark:text-white">
-                        Testimonials
+                        Docker
                       </p>
                     </div>
                   </div>
@@ -93,7 +111,7 @@ function Stacks() {
                         ❖
                       </div>
                       <p className="mt-5 font-medium leading-6 text-black dark:text-white">
-                        Pricing
+                        Postgres
                       </p>
                     </div>
                   </div>
@@ -103,7 +121,27 @@ function Stacks() {
                         ❖
                       </div>
                       <p className="mt-5 font-medium leading-6 text-black dark:text-white">
-                        Blogs
+                        MongoDB
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <div className="flex items-center justify-center w-12 h-12 mx-auto text-black bg-gray-100 rounded-xl">
+                        ❖
+                      </div>
+                      <p className="mt-5 font-medium leading-6 text-black dark:text-white">
+                        MariaDB
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <div className="flex items-center justify-center w-12 h-12 mx-auto text-black bg-gray-100 rounded-xl">
+                        ❖
+                      </div>
+                      <p className="mt-5 font-medium leading-6 text-black dark:text-white">
+                        AWS
                       </p>
                     </div>
                   </div>

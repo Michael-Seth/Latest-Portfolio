@@ -1,5 +1,22 @@
-import box from "../assets/rectangle2.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import extw1 from "../assets/projects/Export-to-wealth.png";
+import extw2 from "../assets/projects/Etw.png";
+import gomora1 from "../assets/projects/Gomora 1.png";
+import gomora2 from "../assets/projects/gomora2.png";
+import zonely1 from "../assets/projects/Zonely.png";
+import zonely2 from "../assets/projects/Zonely2.png";
+import stn1 from "../assets/projects/Ship2Naija.png";
+import compressor1 from "../assets/projects/compressor.png";
+import PropTypes from "prop-types";
+import Nodejs from "../assets/nodejs.svg";
+import Expressjs from "../assets/express-js.svg";
+import Graphql from "../assets/graphql.svg";
+import Rest from "../assets/rest.svg";
+import Postgresql from "../assets/postgresql.svg";
+import Mongodb from "../assets/mongodb.svg";
+import Nestjs from "../assets/nestjs.svg";
+import Mysql from "../assets/mysql.svg";
+import Reactjs from "../assets/reactjs.svg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -7,123 +24,150 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./ProjectSlide.css";
-import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 
 const slides = [
-  { id: 1, content: "Slide 1 Content", name: "Osas", age: 27 },
-  { id: 2, content: "Slide 2 Content", name: "John", age: 37 },
-  { id: 3, content: "Slide 3 Content", name: "Ben", age: 17 },
+  {
+    id: 1,
+    title: "Export To Wealth",
+    subTitle: "Online marketplaces for selling and shipping goods.",
+    description:
+      "Export to Wealth is an innovative Shipping and Logistics Management Software designed to streamline the shipping process for users. It also empowers users to calculate and estimate their profits across various e-commerce platforms, while ensuring Food and Drug Administration compliance.",
+    mainImg: [extw2, extw1],
+    packages: [Nodejs, Expressjs, Rest, Mysql, Reactjs],
+  },
+  {
+    id: 2,
+    title: "Gomora",
+    subTitle: "Ecommerce store for fashoin wears and accessories",
+    description:
+      "Gomora is an e-commerce store that specializes in selling men's clothing. Built using Nodejs, Express, Mongodb and React, it offers a modern, user-friendly shopping experience for customers. With a focus on providing high-quality men's clothing, Gomora utilizes cutting-edge technology to provide a seamless and efficient way for customers to shop for the latest styles and trends in men's fashion",
+    mainImg: [gomora2, gomora1],
+    packages: [Nodejs, Expressjs, Graphql, Mongodb, Reactjs],
+  },
+  {
+    id: 3,
+    title: "Ship to 9ja",
+    subTitle: "Logistics shipping, exportation and delivelry",
+    description:
+      "Ship to Naija is an innovative inventory system for export companies, built with Node.js, Express, and Sequelize. Microservice architecture ensures efficient shipment management, integrated with external APIs for real-time tracking, customs clearance, and accurate shipping cost calculations.",
+    mainImg: [stn1],
+    packages: [Nodejs, Graphql, Postgresql, Nestjs, Reactjs],
+  },
+  {
+    id: 4,
+    title: "Try-Zonely",
+    subTitle: "Appointment scheduling application",
+    description:
+      "This type of software allows users to schedule, manage, and coordinate appointments, meetings, and events with others, often integrating with calendars and providing features like automated reminders, time zone conversions, and the ability to book appointments based on availability",
+    mainImg: [zonely2, zonely1],
+    packages: [Nodejs, Expressjs, Rest, Mysql, Reactjs],
+  },
+  {
+    id: 5,
+    title: "Compressor-gun",
+    subTitle: "Image compression application",
+    description:
+      "Sentry Compact is an image processing web application built with JavaScript and Tailwind CSS. It allows users to easily compress images to any desired file size, making it a powerful tool for optimizing and managing images. With a simple and intuitive interface, Sentry Compact makes it easy for users to compress images efficiently, saving them time and storage space.",
+    mainImg: [compressor1],
+    packages: [Nodejs, Reactjs],
+  },
 ];
+
+// NestedSwiper component that receives slides as props
+function NestedSwiper({ slideImgs }) {
+  return (
+    <Swiper
+      centeredSlides={true}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
+      effect={"fade"}
+      modules={[Autoplay, EffectFade]}
+      className="mySwiper"
+    >
+      {slideImgs.map((img, index) => (
+        <SwiperSlide key={index}>
+          <img
+            className="object-contain object-center mx-auto sm:h-[28rem] rounded-lg"
+            src={img}
+            alt=""
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+}
+
 function ProjectsOverview() {
   return (
     <section className="dark:bg-gray-950 border-t border-gray-900">
       <Swiper
-        spaceBetween={30}
+        // spaceBetween={30}
         centeredSlides={true}
-        effect={"fade"}
         autoplay={{
-          delay: 6000,
-          disableOnInteraction: false,
+          delay: 8000,
+          disableOnInteraction: true,
         }}
-        pagination={{
-          clickable: true,
-        }}
+        
         navigation={true}
-        modules={[Autoplay, EffectFade, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div className="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
               <div className="text-left">
-                <div className="items-center mx-auto lg:inline-flex">
+                <div className="items-center mx-auto">
                   <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
-                    <div>
+                    <div className="lg:justify-start">
                       <p className="text-2xl font-medium tracking-tight text-black dark:text-white sm:text-4xl">
-                        I am a short heading
+                        Featured Products
                       </p>
                     </div>
-                    <div className="lg:ml-auto">
-                      <p className="mt-4 text-lg tracking-tight text-gray-600 dark:text-gray-200 lg:mt-0">
-                        Whether you&apos;re a beginner or an experienced
-                        programmer, our SaaS product offers the tools you need
-                        to be successful.
+                    <div className="lg:justify-end">
+                      <p className="mt-4 text-xl tracking-tight text-gray-600 dark:text-gray-200 lg:mt-0">
+                        {slide.title}
+                      </p>
+                      <p className="mt-4 text-base text-gray-600 dark:text-gray-400 lg:mt-0">
+                        {slide.subTitle}
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="relative items-center w-full mx-auto mt-12 rounded-lg">
-                <img
-                  className="object-cover object-center w-full bg-gray-300 h-[28rem] rounded-lg"
-                  src={box}
-                  alt=""
-                />
+                <NestedSwiper slideImgs={slide.mainImg} />
               </div>
 
               <div>
                 <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl">
                   <div className="mx-auto">
-                    <div className="grid grid-cols-2 gap-0.5 md:grid-cols-6">
-                      <div className="flex justify-center col-span-1 px-8">
-                        <img className="max-h-12" src={box} alt="logo" />
-                      </div>
-                      <div className="flex justify-center col-span-1 px-8">
-                        <img className="max-h-12" src={box} alt="logo" />
-                      </div>
-                      <div className="flex justify-center col-span-1 px-8">
-                        <img className="max-h-12" src={box} alt="logo" />
-                      </div>
-                      <div className="flex justify-center col-span-1 px-8">
-                        <img className="max-h-12" src={box} alt="logo" />
-                      </div>
-                      <div className="flex justify-center col-span-1 px-8">
-                        <img className="max-h-12" src={box} alt="logo" />
-                      </div>
-                      <div className="flex justify-center col-span-1 px-8">
-                        <img className="max-h-12" src={box} alt="logo" />
-                      </div>
+                    <div className="grid grid-cols-2 gap-0.5 md:grid-cols-6 justify-center items-center mx-auto">
+                      {slide.packages.map((icon, index) => (
+                        <div
+                          className="flex justify-center dark:bg-gray-100 bg-gray-900 rounded-md py-2 col-span-1 px-4 m-6"
+                          key={index}
+                        >
+                          <img className="w-8" src={icon} alt="logo" />
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
               </div>
               <div>
-                <div className="pt-12 mx-auto lg:max-w-7xl">
-                  <dl className="grid grid-cols-1 gap-6 space-y-0 lg:gap-24 lg:grid-cols-3">
+                <div className="mx-auto lg:max-w-7xl">
+                  <dl className="mx-auto">
                     <div>
                       <div>
-                        <p className="text-lg font-medium leading-6 text-black dark:text-gray-200">
-                          Developer experience
+                        <p className="text-2xl tracking-wide font-medium leading-6 text-black dark:text-gray-200">
+                          Overview
                         </p>
                       </div>
-                      <div className="mt-2 text-base text-gray-500 dark:text-gray-300">
-                        Plus, our platform is constantly evolving to meet the
-                        changing needs of the tech industry, ensuring
-                        you&apos;ll always be ahead.
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <p className="text-lg font-medium leading-6 text-black dark:text-gray-200">
-                          Designers go-to app
-                        </p>
-                      </div>
-                      <div className="mt-2 text-base text-gray-500 dark:text-gray-300">
-                        Plus, our platform is constantly evolving to meet the
-                        changing needs of the tech industry, ensuring
-                        you&apos;ll always be ahead.
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <p className="text-lg font-medium leading-6 text-black dark:text-gray-200">
-                          Easy onboarding
-                        </p>
-                      </div>
-                      <div className="mt-2 text-base text-gray-500 dark:text-gray-300">
-                        Plus, our platform is constantly evolving to meet the
-                        changing needs of the tech industry, ensuring
-                        you&apos;ll always be ahead.
+                      <div className="mt-3 text-base text-justify text-gray-500 dark:text-gray-400">
+                        {slide.description}
                       </div>
                     </div>
                   </dl>
@@ -137,97 +181,8 @@ function ProjectsOverview() {
   );
 }
 
+NestedSwiper.propTypes = {
+  slides: PropTypes.array,
+  slideImgs: PropTypes.array.isRequired,
+};
 export default ProjectsOverview;
-
-<div className="items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
-  <div className="text-left">
-    <div className="items-center mx-auto lg:inline-flex">
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
-        <div>
-          <p className="text-2xl font-medium tracking-tight text-black dark:text-white sm:text-4xl">
-            I am a short heading
-          </p>
-        </div>
-        <div className="lg:ml-auto">
-          <p className="mt-4 text-lg tracking-tight text-gray-600 dark:text-gray-200 lg:mt-0">
-            Whether you&apos;re a beginner or an experienced programmer, our
-            SaaS product offers the tools you need to be successful.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="relative items-center w-full mx-auto mt-12 rounded-lg">
-    <img
-      className="object-cover object-center w-full bg-gray-300 h-[28rem] rounded-lg"
-      src={box}
-      alt=""
-    />
-  </div>
-
-  <div>
-    <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl">
-      <div className="mx-auto">
-        <div className="grid grid-cols-2 gap-0.5 md:grid-cols-6">
-          <div className="flex justify-center col-span-1 px-8">
-            <img className="max-h-12" src={box} alt="logo" />
-          </div>
-          <div className="flex justify-center col-span-1 px-8">
-            <img className="max-h-12" src={box} alt="logo" />
-          </div>
-          <div className="flex justify-center col-span-1 px-8">
-            <img className="max-h-12" src={box} alt="logo" />
-          </div>
-          <div className="flex justify-center col-span-1 px-8">
-            <img className="max-h-12" src={box} alt="logo" />
-          </div>
-          <div className="flex justify-center col-span-1 px-8">
-            <img className="max-h-12" src={box} alt="logo" />
-          </div>
-          <div className="flex justify-center col-span-1 px-8">
-            <img className="max-h-12" src={box} alt="logo" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div className="pt-12 mx-auto lg:max-w-7xl">
-      <dl className="grid grid-cols-1 gap-6 space-y-0 lg:gap-24 lg:grid-cols-3">
-        <div>
-          <div>
-            <p className="text-lg font-medium leading-6 text-black dark:text-gray-200">
-              Developer experience
-            </p>
-          </div>
-          <div className="mt-2 text-base text-gray-500 dark:text-gray-300">
-            Plus, our platform is constantly evolving to meet the changing needs
-            of the tech industry, ensuring you&apos;ll always be ahead.
-          </div>
-        </div>
-        <div>
-          <div>
-            <p className="text-lg font-medium leading-6 text-black dark:text-gray-200">
-              Designers go-to app
-            </p>
-          </div>
-          <div className="mt-2 text-base text-gray-500 dark:text-gray-300">
-            Plus, our platform is constantly evolving to meet the changing needs
-            of the tech industry, ensuring you&apos;ll always be ahead.
-          </div>
-        </div>
-        <div>
-          <div>
-            <p className="text-lg font-medium leading-6 text-black dark:text-gray-200">
-              Easy onboarding
-            </p>
-          </div>
-          <div className="mt-2 text-base text-gray-500 dark:text-gray-300">
-            Plus, our platform is constantly evolving to meet the changing needs
-            of the tech industry, ensuring you&apos;ll always be ahead.
-          </div>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>;
