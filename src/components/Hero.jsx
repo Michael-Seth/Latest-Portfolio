@@ -36,12 +36,12 @@ function Hero() {
               </div>
               <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
                 <a
-                  href="https://drive.google.com/file/d/18wFgfKcqNP8JK45uZb5fXugX2k2kOKlm/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1UZ_LZSdXRAS-NGHthhgAzo31GqrIzWYk/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="items-center justify-center w-full px-6 py-2.5  text-center text-white dark:text-black duration-200 bg-black border-2 border-black dark:bg-white rounded-full inline-flex hover:bg-transparent hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white focus:outline-none lg:w-auto focus-visible:outline-black dark:focus-visible:outline-white text-sm focus-visible:ring-black dark:focus-visible:ring-white"
                 >
-                  Download CV
+                  Preview CV
                 </a>
                 <a
                   href="https://www.linkedin.com/in/michael-osas"
