@@ -20,7 +20,7 @@ function ScrollProfile() {
                 </div>
                 <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
                   <a
-                    href="https://drive.google.com/file/d/1UZ_LZSdXRAS-NGHthhgAzo31GqrIzWYk/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1XnhqMp0xBcZTSnL9plE1VU_EZRMTC_Tg/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                     className="items-center justify-center w-full px-6 py-2.5  text-center text-white dark:text-black duration-200 bg-black dark:bg-gray-100 border-2 border-black dark:border-gray-100 rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black dark:hover:border-gray-100 dark:hover:text-gray-100 focus:outline-none lg:w-auto focus-visible:outline-black dark:focus-visible:outline-gray-100 text-sm focus-visible:ring-black dark:focus-visible:ring-gray-100"
