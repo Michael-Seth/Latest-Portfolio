@@ -80,7 +80,7 @@ const slides = [
     description:
       "Motherboard is a platform where employers can provide a wide range of benefits to their employees, from health insurance to fueling solutions and food benefits. Backed by a passionate team, dozens of merchants, and a powerful platform, Motherboard is set to help employers retain top talent without sacrificing their bottomline.",
     mainImg: [motherboard_1],
-    packages: [Nestjs, Nextjs, TypeOrm, Mysql, Redis, AWS],
+    packages: [Nodejs, Mysql, Reactjs],
   },
 ];
 
