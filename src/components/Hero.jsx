@@ -36,7 +36,7 @@ function Hero() {
               </div>
               <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
                 <a
-                  href="https://drive.google.com/file/d/1XnhqMp0xBcZTSnL9plE1VU_EZRMTC_Tg/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Jk_gYpc7g9zI9tha53XZu0D97dXkmWXW/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="items-center justify-center w-full px-6 py-2.5  text-center text-white dark:text-black duration-200 bg-black border-2 border-black dark:bg-white rounded-full inline-flex hover:bg-transparent hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white focus:outline-none lg:w-auto focus-visible:outline-black dark:focus-visible:outline-white text-sm focus-visible:ring-black dark:focus-visible:ring-white"
