@@ -7,6 +7,7 @@ import zonely1 from "../assets/projects/Zonely.png";
 import zonely2 from "../assets/projects/Zonely2.png";
 import stn1 from "../assets/projects/Ship2Naija.png";
 import compressor1 from "../assets/projects/compressor.png";
+import motherboard_1 from "../assets/projects/Motherboard_1.jpeg";
 import PropTypes from "prop-types";
 import Nodejs from "../assets/nodejs.svg";
 import Expressjs from "../assets/express-js.svg";
@@ -71,6 +72,15 @@ const slides = [
       "Sentry Compact is an image processing web application built with JavaScript and Tailwind CSS. It allows users to easily compress images to any desired file size, making it a powerful tool for optimizing and managing images. With a simple and intuitive interface, Sentry Compact makes it easy for users to compress images efficiently, saving them time and storage space.",
     mainImg: [compressor1],
     packages: [Nodejs, Reactjs],
+  },
+  {
+    id: 6,
+    title: "Motherboard",
+    subTitle: "Employee Benefit CRM",
+    description:
+      "Motherboard is a platform where employers can provide a wide range of benefits to their employees, from health insurance to fueling solutions and food benefits. Backed by a passionate team, dozens of merchants, and a powerful platform, Motherboard is set to help employers retain top talent without sacrificing their bottomline.",
+    mainImg: [motherboard_1],
+    packages: [Nestjs, Nextjs, TypeOrm, Mysql, Redis, AWS],
   },
 ];
 

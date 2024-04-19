@@ -72,6 +72,37 @@ function ScrollProfile() {
                 <li>
                   <div>
                     <p className="mt-5 text-lg font-medium leading-6 text-black dark:text-gray-50">
+                      ❖ Intermediate Software Engineer - Motherboard
+                      <br />
+                      <span className="dark:text-slate-400 mt-2 text-xs">
+                        Jan 2024 - April 2024
+                      </span>
+                    </p>
+                    <div className="w-full h-1 mt-2 mb-6 bg-slate-800 dark:bg-white"></div>
+                  </div>
+                  <div className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <span className="dark:text-white">◦ </span>
+                    Develop and maintain highly scalable backend services to handle high volumes of traffic, using Nest.js.
+                    <br />
+                    <br />
+                    <span className="dark:text-white">◦</span> Utilize open-source technologies such as Kafka and Docker to optimize performance and scalability, reducing latencies and improving overall service quality.
+                    <br />
+                    <br />
+                    <span className="dark:text-white">◦</span> Collaborate with cross-functional team to architect and build the USSD payment systems ensuring users are able to access their benefits without internet connection.
+                    <br />
+                    <br />
+                    <span className="dark:text-white">◦</span> Identify and resolve bugs, vulnerabilities, and performance bottlenecks in existing systems, improving overall system efficiency and reliability.
+                    <br />
+                    <br />
+                    <span className="dark:text-white">◦</span> Create robust, maintainable, and reusable code and tools for configuration management, deployment automation, monitoring, and alerting in various environments.
+                    <br />
+                    <br />
+                    <span className="dark:text-white">◦</span> Collaborate with frontend team to complete the employee dashboard sprint to help admin users(employer) manage employees by group.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p className="mt-5 text-lg font-medium leading-6 text-black dark:text-gray-50">
                       ❖ Fullstack Developer - Netpro
                       <br />
                       <span className="dark:text-slate-400 mt-2 text-xs">
