@@ -168,7 +168,7 @@ function Footer() {
           <div className="mt-8 md:mt-0 md:order-1">
             <p className="text-base text-center text-gray-400">
               <span className="mx-auto mt-2 text-sm text-gray-500 dark:text-gray-300">
-                Copyright © 2018 - 2023 | All rights reserved.
+                Copyright © 2018 - 2024 | All rights reserved.
               </span>
             </p>
           </div>

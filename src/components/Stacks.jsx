@@ -28,9 +28,7 @@ function Stacks() {
                     </p>
                   </div>
                   <div className="mt-2 text-base text-gray-500">
-                    I specialize in Node.js (Express.js and Nest.js) to create
-                    secure and efficient backend solutions. Proficient in
-                    MongoDB, PostgreSQL, MySQL, Sequelize, and TypeORM.
+                    I specialize in building secure and efficient backend applications with Node.js (Express.js and Nest.js). Proficient in NoSQL and SQL databases such as MongoDB, PostgreSQL, MySQL.
                   </div>
                 </li>
                 <li>
